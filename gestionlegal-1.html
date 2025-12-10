@@ -32,12 +32,15 @@
         body {
             background-color: #f4f4f0; 
         }
-        /* Estilo para el logo SVG (ejemplo de un placeholder llamativo) */
-        .logo-svg {
-            display: inline-block;
-            width: 80px;
-            height: 80px;
+        /* Estilo para el logo (asegura que la imagen encaje) */
+        .logo-img {
+            display: block;
+            width: 80px; /* Tamaño fijo asignado */
+            height: 80px; /* Tamaño fijo asignado */
+            object-fit: contain; /* Asegura que la imagen completa sea visible sin cortar */
             margin-bottom: 8px;
+            border-radius: 50%; /* Opcional: para logos circulares */
+            background-color: #E7E489; /* Fondo visible si la imagen es PNG transparente */
         }
     </style>
 </head>
@@ -47,14 +50,10 @@
     <header class="bg-custom-blue text-white py-6 shadow-xl">
         <div class="container mx-auto px-4 flex flex-col items-center">
             
-            <!-- Logo Placeholder (Gráfico y Llamativo) -->
-            <div class="logo-svg" title="Logo GESTIONES LEGALES FISCALES">
-                <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-custom-gold">
-                    <circle cx="50" cy="50" r="45" stroke="#E7E489" stroke-width="4" fill="none"/>
-                    <path d="M 50 15 L 85 50 L 50 85 L 15 50 Z" />
-                    <text x="50" y="55" font-size="20" text-anchor="middle" fill="#033f63" font-weight="bold">GLF</text>
-                </svg>
-            </div>
+            <!-- Logo de Imagen (URL ACTUALIZADA) -->
+            <img src="https://github.com/74123658/Gestionlegal/blob/main/ChatGPT%20Image%209%20dic%202025,%2012_36_16.png?raw=true" 
+                 alt="Logo GESTIONES LEGALES FISCALES" 
+                 class="logo-img">
             
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-custom-beige text-center mt-2">
                 GESTIONES LEGALES FISCALES
